@@ -1,0 +1,73 @@
+  err  0x00000182
+  eip  0x008000be
+  cs   0x----001b
+  flag 0x00000092
+  esp  0xeebfdfa4
+  ss   0x----0023
+[00001000] free env 00001000
+Destroyed the only environment - nothing more to do!
+Welcome to the JOS kernel monitor!
+Type 'help' for a list of commands.
+6828 decimal is 15254 octal!
+ end = f017cbf0 
+Physical memory: 66556K available, base = 640K, extended = 65532K
+6828 decimal is 15254 octal!
+ end = f017cbf0 
+Physical memory: 66556K available, base = 640K, extended = 65532K
+check_page_alloc() succeeded!
+page_check() succeeded!
+check_boot_pgdir() succeeded!
+[00000000] new env 00001000
+Incoming TRAP frame at 0xefbfffbc
+TRAP frame at 0xf01af000
+  edi  0x00000000
+  esi  0x00000000
+  ebp  0xeebfdfb0
+  oesp 0xefbfffdc
+  ebx  0x00000000
+  edx  0x00000001
+  ecx  0x00000001
+  eax  0x00000000
+  es   0x----0023
+  ds   0x----0023
+  trap 0x0000000d General Protection
+  err  0x00000182
+  eip  0x008000be
+  cs   0x----001b
+  flag 0x00000092
+  esp  0xeebfdfa4
+  ss   0x----0023
+[00001000] free env 00001000
+Destroyed the only environment - nothing more to do!
+Welcome to the JOS kernel monitor!
+Type 'help' for a list of commands.
+6828 decimal is 15254 octal!
+ end = f017cbf0 
+Physical memory: 66556K available, base = 640K, extended = 65532K
+check_page_alloc() succeeded!
+page_check() succeeded!
+check_boot_pgdir() succeeded!
+[00000000] new env 00001000
+Incoming TRAP frame at 0xefbfffbc
+TRAP frame at 0xf01af000
+  edi  0x00000000
+  esi  0x00000000
+  ebp  0xeebfdfb0
+  oesp 0xefbfffdc
+  ebx  0x00000000
+  edx  0xf010000c
+  ecx  0x00000064
+  eax  0x00000000
+  es   0x----0023
+  ds   0x----0023
+  trap 0x0000000d General Protection
+  err  0x00000182
+  eip  0x008000be
+  cs   0x----001b
+  flag 0x00000092
+  esp  0xeebfdfa4
+  ss   0x----0023
+[00001000] free env 00001000
+Destroyed the only environment - nothing more to do!
+Welcome to the JOS kernel monitor!
+Type 'help' for a list of commands.

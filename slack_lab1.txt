@@ -1,0 +1,12 @@
+MEMBERS:
+
+SANDEEP KUMAR KOPPALA
+SWASTIKA SINGHAL
+
+LAB 1:
+Late Hours: 0 (Zero)
+Challenge Problem:
+To print the text in different colors, we have to modify cga_putc() function. Two bytes per character are actually used, the first represents the character whereas the second represents the attribute. By masking the bits, the  cga_putc() function checks for the attribute supplied with the character. If no attribute is supplied, it sets the attribute byte to 0x07 (black on white). This information for every character can be modified to set the desired color. 
+e.g. we have to do the operation c| = 0x1E00 to set the attribute byte to 0x1E.
+
+This information can also be passed by using ANSI escape sequence and interpreting it in the above fashion in cga_putc() function.

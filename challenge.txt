@@ -1,0 +1,16 @@
+LAB 2:
+JOS Kernel Monitor has been extended with following commands: 
+1. showmappings - to display the physical mappings for a particular virtual address range
+	Code changes: write a function mon_showmappings in kern/monitor.c; takes command line arguments - start virtual address and end virtual address; converts them to hex values; loops through the virtual address range and uses pgdir_walk function to get the page table entry and displays the physical address mapped and permission bits
+
+2. changeperm - to change the permission bits for the page table entry for a particular virtual address
+	Code changes: write a function mon_changeperm in kern/monitor.c; takes command line arguments - virtual address and new permissions; converts them to hex values; uses pgdir_walk function to get the page table entry for the virtual address; clears the existing permission bits and set the new permissions
+
+3. alloc_page - to explicitly allocate a page
+	Code changes: write a function mon_allocpage in kern/monitor.c; uses page_alloc function to allocate a page; errors if there is no memory; increments pp_ref count if allocation is successful; prints the physical address of the newly allocated page
+
+4. free_page - to explicitly free a page
+	Code changes: write a function mon_freepage in kern/monitor.c; takes a command line argument - physical address of the page to be freed; converts it to hex; if the page is already free, do nothing; otherwise uses page_free function to free the page; sets the pp_ref count to 0
+
+5. page_status - to check if the page is allocated or free
+	Code changes: write a function mon_statuspage in kern/monitor.c; takes a command line argument - physical address of the page whose status is to be determined; converts it to hex; uses pa2page function to get the struct Page pointer to the page; checks the pp_ref count from this struct Page; if pp_ref == 0 display "free" else display "allocated" 

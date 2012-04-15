@@ -1,0 +1,7 @@
+--2011-11-23 23:15:50--  http://localhost:10436/random_file.txt
+Resolving localhost... ::1, 127.0.0.1
+Connecting to localhost|::1|:10436... failed: Connection refused.
+Connecting to localhost|127.0.0.1|:10436... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2011-11-23 23:15:50 ERROR 404: Not Found.
+
